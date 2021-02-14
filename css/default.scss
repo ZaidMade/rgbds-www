@@ -27,9 +27,11 @@ $max-width: 50em;
 
 /// General styling
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html {
 	// Reduce contrast
-	background: #DDDDDD url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAgMAAACdGdVrAAAACVBMVEXd3d3u7u7MzMzRBQJcAAAALElEQVR4XpXLoQHAMAzAsB2hI/z/hQNtQGBNhPzdJIYd0bALGXYKw8NHGk4/dsYHgeX/kQsAAAAASUVORK5CYII=);
+	background-color: #f1f1f1;
 	color: #111;
 	box-sizing: content-box;
 }
@@ -39,7 +41,7 @@ body {
 	font-size: 18px;
 	line-height: 1.4;
 	text-align: justify;
-	font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+	font-family: 'Roboto',Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 
 	margin: 0;
 	width: 100%;
@@ -59,12 +61,6 @@ a {
 	color: #01e; // Blue
 	&:hover {
 		color: #22f; // Slightly lighter blue
-	}
-	&:visited {
-		color: #040; // Dark green
-	}
-	&:visited:hover {
-		color: #020; // Darker green
 	}
 	&:active, &:focus, &:visited:active, &:visited:focus {
 		color: #b00; // Red
@@ -86,9 +82,8 @@ body {
 	padding: 0;
 	height: $navbar-height;
 
-	background-color: $navbar-bg-color;
 	border-bottom: 1px solid #ccc;
-	box-shadow: 0 0 20px #ccc8;
+	box-shadow: 0 0 5px #ccc;
 }
 
 #logo {
@@ -146,9 +141,8 @@ body {
 		left: 10px;
 		right: 10px;
 		border-radius: 0 0 10px 10px;
-		box-shadow: 0 10px 20px #ccc;
+		box-shadow: 0 5px 10px #ccc;
 	}
-	background-color: $navbar-bg-color;
 	z-index: 1;
 
 	> a {
@@ -172,7 +166,7 @@ body {
 #breadcrumbs {
 	margin:	0;
 	padding: 0;
-	background-color: #ccc;
+	border-bottom: 1px solid #ccc;
 	> ol {
 		margin: 0 auto;
 		padding: .5em 1em;
