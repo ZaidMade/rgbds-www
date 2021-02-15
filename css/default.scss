@@ -74,6 +74,24 @@ body {
 	overflow: hidden;
 }
 
+.bg-color-block{
+	display: inline-block;
+	width: 10px;
+	height: 29px;
+	padding-top: 7px;
+	padding-bottom: 14px;
+
+	float: left;
+}
+
+.bgcb-0{
+	width: 20px;
+	background-color: #567256;
+}
+.bgcb-1{ background-color: #6d8f6d; }
+.bgcb-2{ background-color: #aac156; }
+.bgcb-3{ background-color: #d0e672; }
+
 #navbar {
 	width: 100%;
 
@@ -82,6 +100,7 @@ body {
 	padding: 0;
 	height: $navbar-height;
 
+	background-color: #eff6d0;
 	border-bottom: 1px solid #ccc;
 	box-shadow: 0 0 5px #ccc;
 }
@@ -166,7 +185,7 @@ body {
 #breadcrumbs {
 	margin:	0;
 	padding: 0;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #a0406d;
 	> ol {
 		margin: 0 auto;
 		padding: .5em 1em;
@@ -180,6 +199,11 @@ body {
 			}
 		}
 	}
+}
+
+#breadcrumbs-after{
+	height: 3px;
+	border-bottom: 1px solid #47387b;
 }
 
 // So that anchors are scrolled to, but not behind the navbar

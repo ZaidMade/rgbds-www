@@ -27,6 +27,10 @@
 </head>
 <body>
 	<aside id="navbar">
+		<span class="bg-color-block bgcb-0"></span>
+		<span class="bg-color-block bgcb-1"></span>
+		<span class="bg-color-block bgcb-2"></span>
+		<span class="bg-color-block bgcb-3"></span>
 		<a id="logo" href="/"><img src="/assets/logo/190x30.png" alt="Rednex Game Boy Development System"></a>
 		<input type="checkbox" name="navbar-toggle-control" id="navbar-toggle-control" aria-controls="navbar-nav">
 		<label for="navbar-toggle-control" id="navbar-toggle">
@@ -64,6 +68,7 @@
 			{%- endfor %}
 			</ol>
 		</div>
+		<div id="breadcrumbs-after"></div>
 	{%- endif %}
 		<main>
 			{{ content }}
